@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+// あとで消す
+.remove_cookie {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 2% 0;
+  color: $navy;
+  line-height: 1.8;
+
+  .inner {
+    @include clearfix;
+
+    @include mediaquery('max', $middle) {
+      width: $sp-content;
+      margin: 0 auto;
+    }
+  }
+
+  section {
+    background-color: inherit;
+    width: 50%;
+    padding: 0 10px;
+
+    @include mediaquery('max', $middle) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  dl {
+
+    dt {
+      font-weight: bold;
+    }
+  }
+
+  .game-info {
+    float: left;
+
+    @include mediaquery('max', $middle) {
+      float: inherit;
+      margin-bottom: 20%;
+    }
+
+    h1 {
+      font-family: "svgfont";
+      color: $navy;
+
+      &:before {
+        content: "\EA01";
+        font-size: 4rem;
+
+        @include mediaquery('max', $sp) {
+          font-size: 4rem;
+        }
+      }
+
+      span {
+        @include hide-text;
+        display: inline-block;
+      }
+    }
+
+    .detail {
+      display: flex;
+      flex-wrap: wrap;
+
+      dt {
+        width: 20%;
+      }
+
+      dd {
+        width: 80%;
+      }
+    }
+
+    .dl {
+      margin: 2% 0 5%;
+
+      dt {
+        margin-bottom: 2%;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          width: 35%;
+
+          @include mediaquery('max', $middle) {
+            width: 45%;
+          }
+        }
+
+        a {
+          display: inline-block;
+          background-color: $navy;
+          color: #fff;
+          padding: 3% 8%;
+          border-radius: 13px;
+          width: 90%;
+          position: relative;
+          font-size: 1.2rem;
+
+          &:after {
+            @include translate(-50%,-50%);
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f054";
+            font-size: 1rem;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 4%;
+          }
+        }
+      }
+    }
+  }
+
+  .staff {
+    float: right;
+
+    @include mediaquery('max', $middle) {
+      float: inherit;
+    }
+
+    h2 {
+      @include font-size-position(1.5, 0.2);
+      font-family: 'EB Garamond',serif;
+      margin: 3% 0 10%;
+
+      @include mediaquery('max', $middle) {
+        margin: 0 0 5%;
+      }
+    }
+
+    dt {
+      margin-top: 6%;
+    }
+  }
+
+  .copylight {
+    font-size: 0.9rem;
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+
+    @include mediaquery('max', $middle) {
+      margin-top: 5%;
+      font-size: 0.8rem;
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

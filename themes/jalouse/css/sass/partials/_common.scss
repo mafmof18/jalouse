@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html {
+  font-size: calc(12px + 0.25vw)
+}
+
+body {
+  font-family: 'Noto Sans JP',sans-serif,YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+  line-height: 1;
+  color: $font-color;
+  width: 100vw;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img,
+iframe {
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  color: $kye-color;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: $kye-color;
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}
+/*
+.hidden {
+  display: none;
+}
+*/
+.frame {
+  max-width: $content;
+  margin: 0 auto;
+  position: relative;
+}
+
+section {
+  background-color: $cream;
+  position: relative;
+
+  @include mediaquery('max', $middle) {
+    background-color: #fff;
+  }
+
+  h1 {
+    @include font-size-position(1.8, 0.2);
+    font-family: 'EB Garamond',serif,YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+    color: $kye-color;
+
+    &:first-letter{ // 先頭1文字だけ大きく
+      font-size: 1.6em;
+    }
+  }
+}

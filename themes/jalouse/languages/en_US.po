@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jalouse\n"
+"POT-Creation-Date: 2019-07-02 19:39+0900\n"
+"PO-Revision-Date: 2019-07-02 19:40+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x;_ex;_nx\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: config\n"
+"X-Poedit-SearchPathExcluded-1: css\n"
+"X-Poedit-SearchPathExcluded-2: fonts\n"
+"X-Poedit-SearchPathExcluded-3: images\n"
+"X-Poedit-SearchPathExcluded-4: node_modules\n"
+"X-Poedit-SearchPathExcluded-5: style.css\n"
+"X-Poedit-SearchPathExcluded-6: gulpfile.js\n"
+"X-Poedit-SearchPathExcluded-7: package-lock.json\n"
+"X-Poedit-SearchPathExcluded-8: package.json\n"
+
+#: partials/modal.php:9
+msgid "これより先のページは、18歳未満の方には不適切なコンテンツが含まれております。"
+msgstr "Pages beyond this contain content that is inappropriate for people under 18 years of age."
+
+#: partials/modal.php:10
+msgid "18歳未満の方の閲覧は固くお断りします。"
+msgstr "We do not allow viewing of people under 18 years of age."
+
+#: partials/modal.php:11
+msgid "Webページにアクセスしますか？"
+msgstr "Do you want to access the web page?"
+
+#: partials/modal.php:14
+msgid "はい、18歳以上です"
+msgstr "Yes, I am over 18 years old"
+
+#: partials/modal.php:15
+msgid "いいえ、18歳未満です"
+msgstr "No, I am under 18 years old"
+
+#~ msgid "日本語"
+#~ msgstr "英語"
+
+#~ msgid "こんにちは"
+#~ msgstr "Hello"
