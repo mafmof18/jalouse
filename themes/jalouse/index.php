@@ -54,7 +54,7 @@
           wp_reset_postdata(); // 直前のクエリを復元する
         ?>
         </ul>
-        <p><a href="">一覧へ</p>
+        <p><a href="">一覧へ</a></p>
       </div>
     </div>
   </section>
