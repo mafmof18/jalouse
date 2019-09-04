@@ -12,7 +12,7 @@
 
   <ul>
     <li><a class="close_modal"><span>YES</span><?php _e('はい、18歳以上です', 'jalouse'); ?></a></li>
-    <li><a href="#TODO"><span>NO</span><?php _e('いいえ、18歳未満です', 'jalouse'); ?></a></li>
+    <li><a href="https://www.google.co.jp/"><span>NO</span><?php _e('いいえ、18歳未満です', 'jalouse'); ?></a></li>
   </ul>
 
 </div>

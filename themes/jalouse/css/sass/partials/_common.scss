@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 html {
-  font-size: calc(12px + 0.25vw)
+  font-size: calc(12px + 0.25vw);
+  overflow: auto;
+  height: 100%;
 }
 
 body {
@@ -41,12 +43,9 @@ a {
 
 .noscroll {
   overflow: hidden;
+  height: 100%;
 }
-/*
-.hidden {
-  display: none;
-}
-*/
+
 .frame {
   max-width: $content;
   margin: 0 auto;

@@ -6,15 +6,16 @@
           <span>jalouse</span>
         </h1>
         <dl class="detail">
-          <dt>タイトル</dt>
-          <dd>少女と罪　栞編　~jalouse~</dd>
-          <dt>ジャンル</dt>
-          <dd>純文学レズビアン 恋愛ADV</dd>
-          <dt>価格</dt>
-          <dd>DL版　2,000円（予定）<br>※価格は変更となる場合があります</dd>
-          <dt>対象</dt>
-          <dd>歳未満購入禁止</dd>
+          <dt><?php _e('タイトル', 'jalouse'); ?></dt>
+          <dd><?php _e('少女と罪 栞編 ~jalouse~', 'jalouse'); ?></dd>
+          <dt><?php _e('ジャンル', 'jalouse'); ?></dt>
+          <dd><?php _e('フルボイス純愛百合ADV', 'jalouse'); ?></dd>
+          <dt><?php _e('価格', 'jalouse'); ?></dt>
+          <dd><?php _e('3,000円（予定）<br>※価格は変更となる場合があります', 'jalouse'); ?></dd>
+          <dt><?php _e('対象', 'jalouse'); ?></dt>
+          <dd><?php _e('全年齢対象（予定）', 'jalouse'); ?></dd>
         </dl>
+        <?php /*
         <dl class="dl">
           <dt>製品版購入</dt>
           <dd>
@@ -24,42 +25,40 @@
             </ul>
           </dd>
         </dl>
+        */ ?>
       </section>
 
       <section class="staff">
         <h2>STAFF CREDITS</h2>
         <dl>
-          <dt>企画・監督・シナリオ・イラスト・スクリプト・その他諸々</dt>
-          <dd>おちょこ口 @ochokokuchi</dd>
-          <dt>キャスト</dt>
+          <dt><?php _e('企画・監督・シナリオ・イラスト・スクリプト・その他諸々', 'jalouse'); ?></dt>
+          <dd><?php _e('おちょこ口 @ochokokuchi', 'jalouse'); ?></dd>
+          <dt><?php _e('キャスト', 'jalouse'); ?></dt>
           <dd>
             <ul>
-              <li>草壁 栞：鈴香夏目 @Eselletis</li>
-              <li>茅ヶ崎 美姫：一色ヒカル @issiki_hikaru</li>
-              <li>シスター：北都南</li>
+              <li><?php _e('草壁 栞：鈴香夏目 @Eselletis', 'jalouse'); ?></li>
+              <li><?php _e('茅ヶ崎 美姫：田中涼子 @tanakaryoko_koe', 'jalouse'); ?></li>
+              <li><?php _e('シスター：ひと美 @hitomityan', 'jalouse'); ?></li>
             </ul>
           </dd>
-          <dt>エキストラ</dt>
-          <dd>
-            <ul>
-              <li>黒雪灰那 @kuroyukihaina</li>
-              <li>倉浪あお @kuranamiao</li>
-            </ul>
-          </dd>
-          <dt>音楽</dt>
-          <dd>光田晋哉 @musicpandora</dd>
+          <dt><?php _e('音楽', 'jalouse'); ?></dt>
+          <dd><?php _e('光田晋哉 @musicpandora', 'jalouse'); ?></dd>
+          <dt><?php _e('主題歌', 'jalouse'); ?></dt>
+          <dd>nayuta @7utauta</dd>
         </dl>
       </section>
-      <p class="copylight">このホームページに掲載されている文書・図版・写真等の無断転載を禁じます。<br>
-      <small>COPYRIGHT &copy;おちょこ口</small></p>
     </div>
+      <p class="copylight"><?php _e('このホームページに掲載されている文書・図版・写真等の無断転載を禁じます。', 'jalouse'); ?><br>
+      <small><?php _e('COPYRIGHT &copy;おちょこ口', 'jalouse'); ?></small></p>
   </div>
 </footer>
 
 <?php get_template_part('partials/modal-certification'); ?>
 <?php get_template_part('partials/modal-character'); ?>
 <?php wp_footer(); ?>
+<?php /* 年齢確認モーダル用 クッキー削除
 <a class="remove_cookie">クッキー削除</a>
+*/ ?>
 
 </body>
 </html>

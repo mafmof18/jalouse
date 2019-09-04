@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jalouse\n"
-"POT-Creation-Date: 2019-07-02 19:39+0900\n"
+"POT-Creation-Date: 2019-08-27 17:43+0900\n"
 "PO-Revision-Date: 2019-07-01 14:58+0900\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,22 +26,201 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-7: package-lock.json\n"
 "X-Poedit-SearchPathExcluded-8: package.json\n"
 
-#: partials/modal.php:9
+#: archive.php:47
+msgid "戻る"
+msgstr ""
+
+#: footer.php:9
+msgid "タイトル"
+msgstr ""
+
+#: footer.php:10
+msgid "少女と罪 栞編 ~jalouse~"
+msgstr ""
+
+#: footer.php:11
+msgid "ジャンル"
+msgstr ""
+
+#: footer.php:12 index.php:12
+msgid "フルボイス純愛百合ADV"
+msgstr ""
+
+#: footer.php:13
+msgid "価格"
+msgstr ""
+
+#: footer.php:14
+msgid "3,000円（予定）<br>※価格は変更となる場合があります"
+msgstr ""
+
+#: footer.php:15
+msgid "対象"
+msgstr ""
+
+#: footer.php:16
+msgid "18歳未満購入禁止"
+msgstr ""
+
+#: footer.php:34
+msgid "企画・監督・シナリオ・イラスト・スクリプト・その他諸々"
+msgstr ""
+
+#: footer.php:35
+msgid "おちょこ口 @ochokokuchi"
+msgstr ""
+
+#: footer.php:36
+msgid "キャスト"
+msgstr ""
+
+#: footer.php:39
+msgid "草壁 栞：鈴香夏目 @Eselletis"
+msgstr ""
+
+#: footer.php:40
+msgid "茅ヶ崎 美姫：田中涼子 @issiki_hikaru"
+msgstr ""
+
+#: footer.php:41
+msgid "シスター：ひと美"
+msgstr ""
+
+#: footer.php:44
+msgid "音楽"
+msgstr ""
+
+#: footer.php:45
+msgid "光田晋哉 @musicpandora"
+msgstr ""
+
+#: footer.php:46
+msgid "主題歌"
+msgstr ""
+
+#: footer.php:51
+msgid "このホームページに掲載されている文書・図版・写真等の無断転載を禁じます。"
+msgstr ""
+
+#: footer.php:52
+msgid "COPYRIGHT &copy;おちょこ口"
+msgstr ""
+
+#: index.php:58
+msgid "一覧"
+msgstr ""
+
+#: index.php:71
+msgid "『少女と罪 栞編 ～jalouse～』とは"
+msgstr ""
+
+#: index.php:72
+msgid "繊細な感情を描く、新進気鋭のインディーノベルゲームブランド『PurePurple』処女作<br>純文学“風”百合ビジュアルノベルゲーム『少女と罪』シリーズの第1作。"
+msgstr ""
+
+#: index.php:73
+msgid "豪華声優陣による、”完全”フルボイス"
+msgstr ""
+
+#: index.php:74
+msgid "本作は、台詞だけでなく、地の文まで全ての文章にボイスが付いております。<br>まるでラヂオドラマのような雰囲気を、豪華声優による読み上げと共にお楽しみください。<br>（メインキャスト：鈴香夏目/田中涼子/ひと美）"
+msgstr ""
+
+#: index.php:75
+msgid "本作専用のサウンドトラック"
+msgstr ""
+
+#: index.php:76
+msgid "BGMは既存の素材を使わず、全て本作オリジナルのものをプロの作曲家に作っていただきました。<br>美麗イラスト、ボイスと共に、本作の唯一無二の雰囲気を醸成します。（作曲：光田晋哉）<br>（右上のメニューからBGMのクロスフェードをご試聴いただけます）"
+msgstr ""
+
+#: index.php:77
+msgid "豊富な美麗イラスト"
+msgstr ""
+
+#: index.php:78
+msgid "24ものイベントCG（差分込み131枚）、30ものオリジナル背景画が収録されています。"
+msgstr ""
+
+#: index.php:93
+msgid "長野県K町の山奥にひっそりと佇むミッションスクール、『聖純女学院』。<br>ここではこんな噂が囁かれていた。<br>”教会のマリア様にお願い事をすると、何でも一つ願いが叶う。<br>……と同時に、何か一つ、大切なものを失う”"
+msgstr ""
+
+#: index.php:96
+msgid "この学院に入学する『草壁　栞（くさかべ　しおり）』は、<br>美しい少女『茅ヶ崎　美姫（ちがさき　みき）』と同じ部屋で暮らすことになり、<br>次第に彼女の魅力に惹かれていく。"
+msgstr ""
+
+#: index.php:99
+msgid "しかしある日遭遇した美姫の”何か”は、<br>栞にある感情を抱かせる――"
+msgstr ""
+
+#: index.php:102
+msgid "―――これは、”欲望と代償”のお話―――"
+msgstr ""
+
+#: partials/modal-certification.php:9
 msgid "これより先のページは、18歳未満の方には不適切なコンテンツが含まれております。"
 msgstr ""
 
-#: partials/modal.php:10
+#: partials/modal-certification.php:10
 msgid "18歳未満の方の閲覧は固くお断りします。"
 msgstr ""
 
-#: partials/modal.php:11
+#: partials/modal-certification.php:11
 msgid "Webページにアクセスしますか？"
 msgstr ""
 
-#: partials/modal.php:14
+#: partials/modal-certification.php:14
 msgid "はい、18歳以上です"
 msgstr ""
 
-#: partials/modal.php:15
+#: partials/modal-certification.php:15
 msgid "いいえ、18歳未満です"
+msgstr ""
+
+#: partials/modal-character.php:18
+msgid "本作の主人公。<br>引っ込み思案で人と話すのも<br>ままならない。"
+msgstr ""
+
+#: partials/modal-character.php:19
+msgid "そんな自分を変えようと親元を離れ、寮生活を送ろうと決意するが・・・。"
+msgstr ""
+
+#: partials/modal-character.php:20
+msgid "少し胸の発育がいいのを気にしている。"
+msgstr ""
+
+#: partials/modal-character.php:28 partials/modal-character.php:34
+#: partials/modal-character.php:40 partials/modal-character.php:75
+#: partials/modal-character.php:81 partials/modal-character.php:87
+#: partials/modal-character.php:121 partials/modal-character.php:127
+msgid "※ご利用のブラウザでは再生することができません。"
+msgstr ""
+
+#: partials/modal-character.php:44
+msgid "CV：鈴香夏目"
+msgstr ""
+
+#: partials/modal-character.php:65
+msgid "本作品のヒロイン。<br>美人で天真爛漫、それでいて<br>お嬢様の品も持ち併せているが、<br>全く鼻にかけないので<br>同性からの人気が高い。"
+msgstr ""
+
+#: partials/modal-character.php:67
+msgid "ガサツな性格を少し気にしている。"
+msgstr ""
+
+#: partials/modal-character.php:91
+msgid "CV：田中涼子"
+msgstr ""
+
+#: partials/modal-character.php:111
+msgid "学内の教会に勤める修道士。<br>おっとりした物腰、モナリザのように柔らかい笑顔で<br>生徒達を暖かく包みながらも、<br>時々毒のあるジョークをかます。"
+msgstr ""
+
+#: partials/modal-character.php:113
+msgid "色々と謎の多い人物。"
+msgstr ""
+
+#: partials/modal-character.php:131
+msgid "CV：ひと美"
 msgstr ""

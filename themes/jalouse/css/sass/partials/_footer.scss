@@ -13,23 +13,34 @@ footer {
   color: $navy;
   line-height: 1.8;
 
-  .inner {
-    @include clearfix;
+  @include mediaquery('max', $middle) {
+    padding: 4% 0 10%;
+  }
 
-    @include mediaquery('max', $middle) {
+  .frame {
+    padding: 0 3%;
+
+    @include mediaquery('max', $tablet) {
       width: $sp-content;
       margin: 0 auto;
+      padding-bottom: 5%;
+    }
+  }
+
+  .inner {
+    display: flex;
+
+    @include mediaquery('max', $tablet) {
+      display: block;
     }
   }
 
   section {
     background-color: inherit;
     width: 50%;
-    padding: 0 10px;
 
-    @include mediaquery('max', $middle) {
+    @include mediaquery('max', $tablet) {
       width: 100%;
-      padding: 0;
     }
   }
 
@@ -41,11 +52,11 @@ footer {
   }
 
   .game-info {
-    float: left;
+    padding-right: 5%;
 
-    @include mediaquery('max', $middle) {
-      float: inherit;
+    @include mediaquery('max', $tablet) {
       margin-bottom: 20%;
+      padding-right: 0;
     }
 
     h1 {
@@ -125,16 +136,11 @@ footer {
   }
 
   .staff {
-    float: right;
-
-    @include mediaquery('max', $middle) {
-      float: inherit;
-    }
 
     h2 {
       @include font-size-position(1.5, 0.2);
       font-family: 'EB Garamond',serif;
-      margin: 3% 0 10%;
+      margin: 3% 0 8%;
 
       @include mediaquery('max', $middle) {
         margin: 0 0 5%;
@@ -143,20 +149,19 @@ footer {
 
     dt {
       margin-top: 6%;
+
+      @include mediaquery('max', $tablet) {
+        margin-top: 3%;
+      }
     }
   }
 
   .copylight {
-    font-size: 0.9rem;
-    float: left;
-    width: 50%;
-    padding: 0 10px;
+    font-size: 0.8rem;
+    margin-top: 3%;
 
-    @include mediaquery('max', $middle) {
-      margin-top: 5%;
-      font-size: 0.8rem;
-      width: 100%;
-      padding: 0;
+    @include mediaquery('max', $tablet) {
+      margin-top: 10%;
     }
   }
 }

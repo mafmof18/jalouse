@@ -1,50 +1,61 @@
-/*
-var sound = new Howl({
-  src: ['/wp-content/themes/jalouse/sound/bgm/jalouse_crossfade.mp3'],
-  autoplay: true,
-  loop: true,
-  volume: 0.1,
-});
-
-play.addEventListener("click", e => {
-  sound.play(); // 一時停止したところから再生
-  sound.fade(1, 0, 10000);
-});
-
-pause.addEventListener("click", e => {
-  sound.pause(); // 一時停止
-});
-// voice 再生
 (function (window, $) {
   'use strict';
 
-  $.fn.useSound = function (_event, _id) {
-    var se = $(_id);
-    this.on(_event, function(){
-      se[0].currentTime = 0;
-      se[0].play();
+   var $prevVoice = '';
+   var $bgm = $('#bgm').get(0);
+   // フォーカスが外れたときのための判定
+   var isBGM = false;
+
+  $('.audio').on('click', function() {
+    voicePause();
+    // bgmが再生中なら音量を小さくする
+    if (isBgm()) {
+      $bgm.volume = 0.2;
+    }
+    $prevVoice = $(this).find('audio').get(0);
+    $prevVoice.play();
+
+    $prevVoice.addEventListener('ended', function(){
+      $bgm.volume = 1;
     });
-    return this;
-  };
 
-})(this, this.jQuery);
+  });
 
-$('#voice1').useSound('mousedown touchstart', '#sound');
-$('#voice2').useSound('mousedown touchstart', '#sound2');
+  $('#bgm-on, #bgm-off').on('click', function() {
+    voicePause();
+    if (isBgm()) {
+      $bgm.pause();
+      $('#bgm-on').removeClass('active');
+      $('#bgm-off').addClass('active');
+      isBGM = false;
+    } else {
+      $bgm.volume = 1;
+      $bgm.play();
+      $('#bgm-off').removeClass('active');
+      $('#bgm-on').addClass('active');
+      isBGM = true;
+    }
+  });
+/* フォーカスが外れたら再生を停止
+  $(window).on('focus', function() {
+    if (isBGM) {
+      $bgm.volume = 1;
+      $bgm.play();
+    }
+  }).on('blur', function() {
+    voicePause();
+    $bgm.pause();
+  });
 */
-(function (window, $) {
-  'use strict';
+  function isBgm() {
+    return ($bgm.duration > 0 && ! $bgm.paused);
+  }
 
-  $.fn.useSound = function (_event, _id) {
-    var se = $(_id);
-    this.on(_event, function(){
-      se[0].currentTime = 0;
-      se[0].play();
-    });
-    return this;
-  };
+  function voicePause() {
+    if ($prevVoice !== '') {
+      $prevVoice.pause();
+      $prevVoice.currentTime = 0;
+    }
+  }
 
 })(this, this.jQuery);
-
-$('#btn').useSound('mousedown touchstart', '#btnsound');
-$('#btn2').useSound('mousedown touchstart', '#btnsound2');

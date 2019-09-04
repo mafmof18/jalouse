@@ -13,17 +13,9 @@
 <meta property="og:type" content="website" />
 <meta property="og:description" content="<?php echo $site['description'] ?>" />
 <meta property="og:url" content="<?php echo $site['url'] ?>" />
-<meta property="og:image" content="ページの画像URL" />
+<meta property="og:image" content="<?php echo $dir['img'] ?>/common/ogp.jpg" />
 <meta property="og:site_name" content="<?php echo $site['title'] ?>" />
 <meta property="og:locale" content="ja_JP" />
-<?php /* twitter cord
-<meta name="twitter:card" content="カード種類" />
-<meta name="twitter:site" content="@ユーザー名" />
-<meta property="og:url" content="記事のURL" />
-<meta property="og:title" content="記事のタイトル" />
-<meta property="og:description" content="記事の要約（ディスクリプション）" />
-<meta property="og:image" content="画像のURL" />
-*/ ?>
 <?php // iconfont 読み込み?>
 <style>
 @font-face {
@@ -37,6 +29,8 @@
   font-style: normal;
 }
 </style>
+<link rel="shortcut icon" href="<?php echo $dir['img'] ?>/common/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="<?php echo $dir['img'] ?>/common/favicon.ico" type="image/vnd.microsoft.icon" />
 <?php wp_head(); ?>
 <?php get_template_part('partials/analytics'); ?>
 
@@ -44,29 +38,38 @@
 
 <body>
 
-<audio id="bgm" loop autoplay muted>
-  <source src="/wp-content/themes/jalouse/sound/bgm/jalouse_crossfade.mp3" type="audio/mp3">
+<audio id="bgm" preload="auto" loop>
+  <source src="<?php echo $dir['audio'] ?>/bgm/jalouse_crossfade.mp3" loop type="audio/mp3">
 </audio>
 
 <header id="header">
   <div class="frame">
-    <div id="menu-icon"></div>
-    <div class="inner">
-      <nav>
-        <h1 class="logo">
-          <span>jalouse</span>
-        </h1>
-        <p>〜MENU〜</p>
-        <ul>
-          <li><a href="#information">WHAT'S NEW</a></li>
-          <li><a href="#introduction">INTRODUCTION</a></li>
-          <li><a href="#character">CHARACTER</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#movie">MOVIE</a></li>
-          <li><a href="#special">SPECIAL</a></li>
-        </ul>
-      </nav>
-    </div>
-    </div>
+  <?php  if ( is_front_page() && is_home() ) { ?>
+    <ul class="list">
+      <li id="menu-icon" class="menu"></li>
+    </ul>
+  <?php } ?>
   </div>
+
+  <nav class="inner">
+    <ul class="menu">
+      <li><a href="#information">WHAT'S NEW</a></li>
+      <li><a href="#introduction">INTRODUCTION</a></li>
+      <li><a href="#story">STORY</a></li>
+      <li><a href="#character">CHARACTER</a></li>
+      <li><a href="#gallery">GALLERY</a></li>
+      <li><a href="#movie">MOVIE</a></li>
+      <li><a href="#special">SPECIAL</a></li>
+    </ul>
+
+    <dl class="sound">
+      <dt>SOUND</dt>
+      <dd>
+        <ul>
+          <li id="bgm-on" class="on"></li>
+          <li id="bgm-off" class="off active"></li>
+        </ul>
+      </dd>
+    </dl>
+  </nav>
 </header>
