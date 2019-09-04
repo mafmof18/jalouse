@@ -108,18 +108,18 @@ $(function () {
 
   });
 
-  $('#bgm-on, #bgm-off').on('click', function() {
+  $('.bgm-on, .bgm-off').on('click', function() {
     voicePause();
     if (isBgm()) {
       $bgm.pause();
-      $('#bgm-on').removeClass('active');
-      $('#bgm-off').addClass('active');
+      $('.bgm-on').removeClass('active');
+      $('.bgm-off').addClass('active');
       isBGM = false;
     } else {
       $bgm.volume = 1;
       $bgm.play();
-      $('#bgm-off').removeClass('active');
-      $('#bgm-on').addClass('active');
+      $('.bgm-off').removeClass('active');
+      $('.bgm-on').addClass('active');
       isBGM = true;
     }
   });

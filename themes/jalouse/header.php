@@ -66,8 +66,8 @@
       <dt>SOUND</dt>
       <dd>
         <ul>
-          <li id="bgm-on" class="on"></li>
-          <li id="bgm-off" class="off active"></li>
+          <li id="bgm-on" class="bgm-on on"></li>
+          <li id="bgm-off" class="bgm-off off active"></li>
         </ul>
       </dd>
     </dl>

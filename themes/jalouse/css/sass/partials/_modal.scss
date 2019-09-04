@@ -33,16 +33,6 @@
     }
   }
 
-  .adults {
-    @include font-size-position(1.2, 0);
-    display: inline-block;
-    border: 4px solid $navy;
-    padding: 2px 15px;
-    border-radius: 15px;
-    font-weight: 900;
-    margin-bottom: 5%;
-  }
-
   p {
     line-height: 1.8;
   }
@@ -60,33 +50,42 @@
 
     li {
       margin: 0 5%;
-      min-width: 50%;
+        @include font-size-position(1.6, 0.4);
+        font-family: $garamond;
+        color: #f7f7f7;
+        padding: 20px 20px;
+        border-radius: 10px;
+        display: block;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 2rem;
+        }
 
       @include mediaquery('max', $tablet) {
         margin: 5% 0;
       }
+    }
 
-      a {
-        color: #f7f7f7;
-        padding: 10px 20px;
-        border-radius: 10px;
-        display: block;
-        line-height: 1.5;
+    & li:first-child {
+      background-color: $navy;
 
-        span {
-          @include font-size-position(1.6, 0.4);
-          display: block;
-          font-family: $garamond;
-        }
+      &:after {
+        content: "\f028";
       }
     }
 
-    & li:first-child a {
-      background-color: $navy;
-    }
-
-    & li:last-child a {
+    & li:last-child {
       background-color: #a9a9a9;
+
+      &:after {
+        content: "\f026";
+      }
     }
   }
 }

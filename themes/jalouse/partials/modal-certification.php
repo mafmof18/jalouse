@@ -4,15 +4,16 @@
     <span>jalouse</span>
   </h1>
 
-  <p class="adults">R18+</p>
-
-  <p><?php _e('これより先のページは、18歳未満の方には不適切なコンテンツが含まれております。', 'jalouse'); ?></p>
-  <p><?php _e('18歳未満の方の閲覧は固くお断りします。', 'jalouse'); ?></p>
-  <p><?php _e('Webページにアクセスしますか？', 'jalouse'); ?></p>
+  <p><?php _e('このサイトではBGMを流すことが出来ます。<br>スピーカーなどの音量に注意して、本作の世界観をお楽しみください。', 'jalouse'); ?></p>
 
   <ul>
-    <li><a class="close_modal"><span>YES</span><?php _e('はい、18歳以上です', 'jalouse'); ?></a></li>
-    <li><a href="https://www.google.co.jp/"><span>NO</span><?php _e('いいえ、18歳未満です', 'jalouse'); ?></a></li>
+    <li><a class="close_modal">SOUND ON</a></li>
+    <li><a href="https://www.google.co.jp/">SOUND OFF</a></li>
+  </ul>
+
+  <ul>
+    <li id="bgm-on" class="bgm-on on close_modal">SOUND ON</li>
+    <li id="bgm-off" class="bgm-off off active close_modal">SOUND OFF</li>
   </ul>
 
 </div>
